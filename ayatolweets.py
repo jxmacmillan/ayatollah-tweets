@@ -8,7 +8,7 @@ import dateutil.parser
 import unicodedata
 import time
 
-From dotenv import load_dotenv
+from dotenv import load_dotenv
 load_dotenv()
 import os
 token = os.environ.get("api-token")
