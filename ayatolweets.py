@@ -8,13 +8,10 @@ import dateutil.parser
 import unicodedata
 import time
 
-from dotenv import load_dotenv
-load_dotenv()
-import os
-token = os.environ.get("api-token")
+token = os.environ.get('TOKEN')
 
 def auth():
-    return os.environ['TOKEN']
+    return os.environ.get('TOKEN')
 
 def create_headers(bearer_token):
     headers = {"Authorization": "Bearer {}".format(bearer_token)}
